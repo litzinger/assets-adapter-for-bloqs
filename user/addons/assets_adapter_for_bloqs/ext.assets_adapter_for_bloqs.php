@@ -11,6 +11,9 @@ class Assets_adapter_for_bloqs_ext {
 
 	public function activate_extension()
 	{
+		// Upon activating this extension, delete the Assets adapter for blocks
+		ee()->db->query("DELETE FROM exp_extensions WHERE class = 'Assets_adapter_for_blocks_ext'");
+
 		ee()->db->insert('extensions', array(
 			'class'    => AAFB_CLASSNAME,
 			'method'   => 'blocks_discover_fieldtypes',
