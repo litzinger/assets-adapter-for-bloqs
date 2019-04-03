@@ -10,7 +10,7 @@
 if (! defined('AAFB_VERSION')) {
     define('AAFB_NAME', 'Assets Adapter for Bloqs');
     define('AAFB_TYPE', 'assets_adapter_for_bloqs');
-    define('AAFB_VERSION', '1.0.0');
+    define('AAFB_VERSION', '1.0.1');
     define('AAFB_DESCRIPTION', 'Enable Assets to work with Bloqs');
     define('AAFB_CLASSNAME', 'Assets_adapter_for_bloqs_ext');
 }
